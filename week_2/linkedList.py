@@ -53,7 +53,6 @@ class LinkedList:
         prev.next = prev.next.next
 
 
-
 l = LinkedList(3)
 l.append(4)
 l.append(5)
