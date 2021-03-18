@@ -1,6 +1,5 @@
 # checks if a sublist in a list.
-# converts the parent list into a hash set
-# and lookup from a sublist
+# converts the parent list into a hash set and lookup from a sublist
 
 # O(n) time
 
@@ -10,13 +9,10 @@ shop_orders = ["오뎅", "콜라", "만두"]
 
 
 def is_available_to_order(menus, orders):
-    s = set(menus)
-
     for o in orders:
-        if o not in s:
+        if o not in set(menus):
             return False
     return True
 
 
-result = is_available_to_order(shop_menus, shop_orders)
-print(result)
+print(is_available_to_order(shop_menus, shop_orders))

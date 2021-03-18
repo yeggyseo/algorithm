@@ -21,8 +21,7 @@ class LinkedList:
         cur.next = Node(value)
 
     def get_kth_node_from_last(self, k):
-        s = self.head
-        e = self.head
+        s = e = self.head
 
         for i in range(k):
             e = e.next
